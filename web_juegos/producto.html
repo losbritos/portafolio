@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tienda.css">
+    <title>Tienda</title>
+
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <h1>Producto</h1>
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a href="tienda.html" class="navegacion_enlace navegacion_enlace--activo">Tienda</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>Producto</h1>
+
+        <div class="juegos">
+            <h1>Juegos</h1>
+            <div class="juego">
+                <img class="juego-imagen" src="img/b.xbox.jpg">
+
+                <div class="juego-contenido">
+                    <p>Juego para toda la familia</p>
+                    <form class="fromulario">
+                        <select class="formulario_campo">
+                            <option disabled selected>-- Seleciona el tipo de juego para consola --</option>
+                            <option>Xbox</option>
+                            <option>Ps4</option>
+                            <option>PC</option>
+                            <input class="formulario_campo" type="number" placeholder="Cantidad" min="1">
+                            <input class="formulario_submit" type="submit" value="Agregar al carrito">
+                        </select>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer_texto">Mundo del gamer - Todos los derechos reservados 2023</p>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>

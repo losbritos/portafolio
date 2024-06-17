@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="tienda.css">
+    <title>Tienda</title>
+
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <h1>Juegos de XBOX</h1>
+        </a>
+        
+    </header>
+
+    <nav class="navegacion">
+        <a class="menu" href="index.html"><h2>Inicio</h2></a>
+        <a class="menu" href="ps4.html"><h2>Juegos de PS4</h2></a>
+        <a class="menu"  href="pc.html"><h2>juegos de Pc</h2></a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>Nuestros Productos</h1>
+
+        <div class="grid">
+            <div class="producto">
+                
+                    <div class="producto_informacion">
+                        <img class="producto_imagen" src="img/b.xbox.jpg" alt="imagen bioshock">
+                        <p class="producto_nombre">Bioshock </p>
+                        <p class="producto_precio">$30</p>
+                        <input class="formulario_submit" type="submit" value="Agregar al carrito">
+                    </div>
+            </div> <!-- fin-->
+            <div class="producto">
+                
+                    <div class="producto_informacion">
+                        <img class="producto_imagen" src="img/r.xbox.jpg" alt="imagen bioshock">
+                        <p class="producto_nombre">Resident evil 4 </p>
+                        <p class="producto_precio">$60</p>
+                        <input class="formulario_submit" type="submit" value="Agregar al carrito">
+                    </div>
+            </div> <!-- fin-->
+            <div class="producto">
+                
+                    <div class="producto_informacion">
+                        <img class="producto_imagen" src="img/d.xbox.jpg" alt="imagen bioshock">
+                        <p class="producto_nombre">Dead space </p>
+                        <p class="producto_precio">$60</p>
+                        <input class="formulario_submit" type="submit" value="Agregar al carrito">
+                    </div>
+            </div> <!-- fin-->
+            <div class="producto">
+                
+                    <div class="producto_informacion">
+                        <img class="producto_imagen" src="img/c.xbox.jpg" alt="imagen bioshock">
+                        <p class="producto_nombre">cuphead </p>
+                        <p class="producto_precio">$15</p>
+                        <input class="formulario_submit" type="submit" value="Agregar al carrito">
+                    </div>
+            </div> <!-- fin-->
+            <div class="producto">
+                
+                    <div class="producto_informacion">
+                        <img class="producto_imagen" src="img/l.xbox.jpg" alt="imagen bioshock">
+                        <p class="producto_nombre">Lies of p </p>
+                        <p class="producto_precio">50</p>
+                        <input class="formulario_submit" type="submit" value="Agregar al carrito">
+                    </div>
+            </div> <!-- fin-->
+            <div class="producto">
+               
+                    <div class="producto_informacion">
+                        <img class="producto_imagen" src="img/s.xbox.jpg" alt="imagen bioshock">
+                        <p class="producto_nombre">Starfield </p>
+                        <p class="producto_precio">$40</p>
+                        <input class="formulario_submit" type="submit" value="Agregar al carrito">
+                    </div>
+                
+            </div> <!-- fin-->
+            
+            
+        </div>    
+        <div class="carrito">
+            <div class="header-carrito">
+                <h2>Tu carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+        <!--   <div class="carrito-item">
+                    <img src="img/b.xbox.jpg" alt="">
+                    <div class="carrito-item-detalles">
+                        <o class="carrito-item-titulo">Box</o>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <p class="carrito-item-precio">$25</p>
+                    </div>
+                    
+                </div>
+                <div class="carrito-item">
+                    <img src="img/c.jpg" alt="">
+                    <div class="carrito-item-detalles">
+                        <p class="carrito-item-titulo">Box</p>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="2" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <p class="carrito-item-precio">$25</p>
+                    </div>
+                    
+                </div> !-->
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu total</strong>
+                    <span class="carrito-precio-total">
+                        $0
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar<i class="fa-solid fa-bag-shopping"></i></button>
+
+            </div>
+        </div>
+
+        
+    </main>
+
+    <footer class="footer">
+        <p class="footer_texto">Mundo del gamer - Todos los derechos reservados 2023</p>
+    </footer>
+    <script src="main.js" async></script>
+    
+</body>
+</html>

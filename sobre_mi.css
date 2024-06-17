@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+body{
+    background: #172c3b;
+    color: #ededed;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: #00abf0;
+}
+
+.sobremi{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 50px 20px;
+
+}
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+    
+
+}
+.sobremi h2{
+    font-size: 49px;
+    text-align: center;
+    padding: 20px 0;
+}
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom:20px ;
+}
+.sobremi .contenido-seccion p span{
+    color: #00abf0;
+    font-weight: bold;
+}
+.sobremi .fila{
+    display: flex;
+}
+.sobremi .fila .col{
+    width: 50%;
+}
+.sobremi .fila .col h3{
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.sobremi .fila .col ul{
+    list-style: none;
+}
+.sobremi .fila .col ul li{
+    margin: 12px 0px;
+}
+.sobremi .fila .col ul li strong{
+    display: inline-block ;
+    color: #00abf0;
+    width: 130px;
+}
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sobremi .fila .col .contenedor-intereses .interes{
+    width: 100px;
+    height: 100px;
+    background-color: #0e1b24;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.sobremi .fila .col .contenedor-intereses .interes:hover{
+    background-color: #00abf0;
+}
+.sobremi button{
+    cursor: pointer;
+    background-color:transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px ;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color:#00abf0;
+    z-index: -1;
+    transition: 1s;
+}
+.sobremi button:hover .overlay{
+    width: 100%;
+
+}
+.skills{
+    background-color: #0e1b24;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 50px 20px;
+
+}
+.skills .contenido{
+    max-width: 1100px;
+    margin: auto;
+    
+
+}
+.skills h2{
+    font-size: 49px;
+    text-align: center;
+    padding: 20px 0;
+}
+.skills .fila{
+    display: flex;
+
+}
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.skills .fila .col h3{
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.skills .skill > span{
+    font-weight: bold;
+    display: flex;
+    margin-bottom:15px ;
+}
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: #172c3b;
+    position: relative;
+    margin-bottom: 30px;
+
+}
+.skills .skill .progeso{
+    background-color: #00abf0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    
+}
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #00abf0;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+.skills .skill .c{
+    width: 0%;
+    animation: 2s c forwards;
+}
+@keyframes c{
+    0%{width:0%;}
+    100%{width:80%;}
+}
+.skills .skill .java{
+    width: 0%;
+    animation: 2s java forwards;
+}
+@keyframes java{
+    0%{width:0%;}
+    100%{width:50%;}
+}
+.skills .skill .py{
+    width: 0%;
+    animation: 2s py forwards;
+}
+@keyframes py{
+    0%{width:0%;}
+    100%{width:60%;}
+}
+.skills .skill .sql{
+    width: 0%;
+    animation: 2s sql forwards;
+}
+@keyframes sql{
+    0%{width:0%;}
+    100%{width:70%;}
+}
+.skills .skill .ko{
+    width: 0%;
+    animation: 2s ko forwards;
+}
+@keyframes ko{
+    0%{width:0%;}
+    100%{width:40%;}
+}
+.skills .skill .ht{
+    width: 0%;
+    animation: 2s ht forwards;
+}
+@keyframes ht{
+    0%{width:0%;}
+    100%{width:70%;}
+}
+.skills .skill .css{
+    width: 0%;
+    animation: 2s css forwards;
+}
+@keyframes css{
+    0%{width:0%;}
+    100%{width:70%;}
+}
+.skills .skill .php{
+    width: 0%;
+    animation: 2s php forwards;
+}
+@keyframes php{
+    0%{width:0%;}
+    100%{width:30%;}
+}
+.skills .skill .comunicacion{
+    width: 0%;
+    animation: 2s comunicacion forwards;
+}
+@keyframes comunicacion{
+    0%{width:0%;}
+    100%{width:90%;}
+}
+.skills .skill .team{
+    width: 0%;
+    animation: 2s team forwards;
+}
+@keyframes team{
+    0%{width:0%;}
+    100%{width:95%;}
+}
+.skills .skill .cr{
+    width: 0%;
+    animation: 2s cr  forwards;
+}
+@keyframes cr{
+    0%{width:0%;}
+    100%{width:50%;}
+}
+.skills .skill .d{
+    width: 0%;
+    animation: 2s d forwards;
+}
+@keyframes d{
+    0%{width:0%;}
+    100%{width:100%;}
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}

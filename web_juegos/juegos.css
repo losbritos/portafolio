@@ -1,0 +1,31 @@
+body{
+    background-color:  #A88A65;
+   
+}
+
+h1{
+    text-align: center;
+}
+.icono{
+    text-align: left;
+}
+
+.columna {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 20px; 
+    padding: 10px;
+}
+.contenedor{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    
+}
+.contenedor img {
+    max-width: 60%;
+    height: auto;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
